@@ -3,7 +3,7 @@ language: objective-c
 
 before_install:
     - pod --version
-    - pod setup --silent
+    - travis_wait 30 pod setup --verbose
     - pod repo update --silent
 
 script:
